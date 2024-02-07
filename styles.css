@@ -1,0 +1,228 @@
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    background:linear-gradient(to bottom,rgb(16, 15, 16),rgb(7, 14, 116));
+    margin: 0;
+}
+body:hover
+{
+    background:linear-gradient(to bottom,rgb(6, 6, 6),rgb(1, 6, 26),rgb(17, 1, 108));
+}
+header {
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    position: relative;
+}
+#view
+{
+    width: 100px;
+    height: 100px;
+    place-items: center;
+    position:absolute;
+    top: 16%;
+    left: 6%;
+    margin-bottom: 20%;
+    border-width:5px;
+    border-style: solid;
+    border-spacing: 45px;
+    border-top-color: rgb(8, 8, 8);
+    border-left-color: #0c0b0b;
+    border-right-color: #0c0b0b;
+    border-bottom-color: rgb(7, 7, 7);
+    border-radius: 60px;
+    animation: slidetop 8s none;
+}
+@keyframes slidetop
+{
+    0%
+    {
+        transform:translate(100px);
+        opacity: 0;
+    }
+    100%
+    {
+        transform: translate(0px);
+        opacity: 1;  
+    }
+}
+#view:before
+{
+    box-shadow:rgba(193, 56, 165, 0.5),rgba(150,210,61,1),rgba(193, 56, 165, 0.5),rgba(150,210,61,1) ; 
+    opacity: 1;      
+}
+#view:hover
+{
+    box-shadow:0 0 5px rgb(3, 134, 134) ,0 0 25px rgb(7, 155, 174) , 0 0 50px rgb(6, 138, 150),0 0 75px rgb(6, 115, 145) ,0 0 100px rgb(20, 164, 177); 
+    opacity: 1;      
+}
+nav {
+    background-color: #0c0b0b;
+    padding: 10px;
+}
+nav::before{
+    background:linear-gradient( rgba(17, 8, 136, 0.5),rgba(1, 11, 103, 0.5));
+    opacity: 0;
+}
+nav:hover{
+    background:linear-gradient(to right, rgb(5, 5, 94),black,black,rgb(5, 5, 94));
+    opacity: 1;
+}
+
+ul {
+    list-style: none;
+    text-align: center;
+}
+
+ul>li {
+    display: inline;
+    border-width: 5px;
+    margin: 0 190px;
+    animation: slidetop 15s ease forwards;   
+}
+@keyframes slidetop
+{
+    0%
+    {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100%
+    {
+        transform: translateX(0px);
+        opacity: 1;  
+    }
+}
+a{
+    text-decoration: none;
+    -webkit-text-fill-color: cyan;
+}
+section{
+    margin: 100px;
+    height: 250px;
+    width: 250px;
+    padding: 20px;
+    background:linear-gradient(to bottom,rgba(56, 193, 70, 0.5),rgb(58, 28, 167));
+    border: 5px none black;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: #ddd;
+    position: relative;
+    float:left ;
+}
+.portfolio
+{
+    margin:20px 0;
+    height: 170px;
+    padding: 20px;
+    position: relative;
+}
+/* Style your portfolio items as needed */
+.project {
+    margin: 20px 0;
+    height: 130px;
+    width: 150px;
+    padding: 20px;
+    border: 1px solid #ede7e7;
+    border-spacing: 15px;
+    border-radius: 30px;
+    border-right-color: rgb(56, 78, 123);
+    border-left-color: rgb(35, 56, 100);
+    border-top-color: rgb(56, 78, 123);
+    border-bottom-color: rgb(35, 56, 100);
+    position: absolute;
+    top: 18%;
+    left: 15%;
+    bottom: 20%;
+}
+.project:hover
+{
+    border-left-color: rgb(45, 56, 103);
+    border-right-color:rgb(161, 59, 189); 
+    border-top-color: rgb(100, 42, 103); 
+    border-bottom-color:rgb(103, 118, 49) ;  
+}
+section:hover{
+    transform: translatey(20px);
+    background: linear-gradient(to bottom,rgba(193, 56, 165, 0.5),rgb(206, 211, 61));
+    box-shadow: 0 0 5px rgb(4, 97, 97) ,0 0 25px rgb(7, 155, 174) , 0 0 50px rgb(6, 138, 150),0 0 75px rgb(6, 115, 145) ,0 0 100px rgb(20, 164, 177);
+    opacity: 1;
+}
+section::before{
+ background:linear-gradient(to bottom,rgba(0,175,155,0.5),rgba(150,210,61,1)) ;
+ opacity: 0;
+}
+ 
+header>h1{
+    -webkit-text-fill-color:black;
+    text-shadow: 0 0 5px cyan,0 0 10px cyan;
+}
+header>p{
+    -webkit-text-fill-color:rgb(35, 128, 151);
+    text-shadow: 0 0 5px black,0 0 10px black;
+}
+header::before
+{
+    background:linear-gradient(to bottom,rgba(0,175,155,0.5),rgba(150,210,61,1)) ;
+    box-shadow:0 0 5px cyan ,0 0 25px cyan , 0 0 50px cyan,0 0 75px cyan ,0 0 100px cyan ;
+    opacity: 0;
+}
+header:hover
+{
+    background:linear-gradient(to bottom,rgba(6, 6, 6, 0.5),rgb(13, 13, 14)) ;
+   /* box-shadow:0 0 5px cyan ,0 0 25px cyan , 0 0 50px cyan,0 0 75px cyan ,0 0 100px cyan ;*/
+    -webkit-text-fill-color: cyan;
+    opacity: 1;
+}
+#about
+{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: relative;
+}
+#button1
+{
+    background-color: rgb(131, 131, 203);
+    position: absolute;
+    top: 85%;
+    left: 35%;
+}
+#button1::before
+{
+    background:radial-gradient(to left,rgb(10, 175, 115),rgb(34, 6, 133));
+    box-shadow:0 0 5px rgb(15, 20, 20) ,0 0 25px cyan , 0 0 50px cyan,0 0 75px cyan ,0 0 100px cyan ;
+    opacity: 0;
+}
+#button1:hover
+{
+    background:linear-gradient(to left,rgb(194, 21, 9),rgb(24, 2, 102));
+    box-shadow:0 0 5px rgb(14, 15, 15) ,0 0 25px rgb(18, 19, 19) , 0 0 50px rgb(10, 12, 12),0 0 75px rgb(3, 18, 18) ,0 0 100px rgb(5, 18, 18) ;
+    -webkit-text-fill-color: #fff;
+    opacity: 1;
+}
+#portfolio
+{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+}
+#button2
+{
+    background-color: rgb(115, 114, 188);
+    position: relative;
+    top: 43%;
+    left: 5%;
+}
+#button2::before
+{
+    background:radial-gradient(to left,rgb(10, 175, 115),rgb(34, 6, 133));
+    box-shadow:0 0 5px rgb(15, 20, 20) ,0 0 25px cyan , 0 0 50px cyan,0 0 75px cyan ,0 0 100px cyan ;
+    opacity: 0;
+}
+#button2:hover
+{
+    background:linear-gradient(to left,rgb(194, 21, 9),rgb(24, 2, 102));
+    box-shadow:0 0 5px rgb(14, 15, 15) ,0 0 25px rgb(18, 19, 19) , 0 0 50px rgb(10, 12, 12),0 0 75px rgb(3, 18, 18) ,0 0 100px rgb(5, 18, 18) ;
+    -webkit-text-fill-color: #fff;
+    opacity: 1;
+}
+
+/* Add more CSS for responsive design and additional styling as desired */
